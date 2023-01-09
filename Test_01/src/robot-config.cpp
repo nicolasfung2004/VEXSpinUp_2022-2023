@@ -48,7 +48,6 @@ int rc_auto_loop_function_Controller1() {
   // update the motors based on the input values
   while(true) {
     if(RemoteControlCodeEnabled) {
-      // calculate the drivetrain motor velocities from the controller joystick axies
       // left = Axis3 + Axis1
       // right = Axis3 - Axis1
       int drivetrainLeftSideSpeed = controller1.Axis3.position() + controller1.Axis1.position();
